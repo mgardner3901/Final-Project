@@ -13,3 +13,6 @@ The design specification should include information like:
 * What data will be stored or manipulated by the program? How will it be encoded and organized?
 * Describe the logic and/or code behind every interaction with the user, and behind everything displayed.
 * If your program uses an unusual or notable *algorithm*, what is the algorithm and how does it work?
+
+*Project will be an adventure game using Python 3 and https://runpython.org
+*Player will read a text based adventure and make choices that will affect the way the adventure plays out
