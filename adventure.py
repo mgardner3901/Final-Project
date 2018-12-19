@@ -28,3 +28,4 @@ if ch2 in ['y', 'Y', 'Yes', 'YES', 'yes']:
     print("It looks as if he is munching on the arm of what you can only assume to be one of the previous guards of this prison.")
     print("It also looks as if he is holding on to something shiny.")
     ch3 = str(input("Do you try to fight it? [Y/N]"))
+
