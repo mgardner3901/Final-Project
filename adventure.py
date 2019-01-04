@@ -100,10 +100,32 @@ return complete
 
 
 else:
-        print ("You turn away from the glowing object, and attempt to leave the cave...")
-        print ("But something won't let you....")
+        print ("You turn away from the glowing object, and keep searching for an exit...")
+        print ("But something stops you...")
         complete = 0
         return complete
+        
+
+
+alive = True
+while alive:
+
+complete = game()
+if complete == 1:
+    alive = input('You see a bright light through what looks to be a small doorway. You climb up some rubble and squeeze your way out and find yourself in a clearing. You escaped alive! Would you like to play again? [y/n]: ')
+    if alive in ['y', 'Y', 'YES', 'yes', 'Yes',]:
+        alive
+
+    else:
+        break
+
+else:
+    alive = input('GAME OVER! Play again? [y/n]: ')
+    if alive in ['y', 'Y', 'YES', 'yes', 'Yes',]:
+        alive
+
+    else:
+        break
 
     
     
