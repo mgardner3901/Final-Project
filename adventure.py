@@ -99,6 +99,11 @@ complete = 0
 return complete
 
 
+else:
+        print ("You turn away from the glowing object, and attempt to leave the cave...")
+        print ("But something won't let you....")
+        complete = 0
+        return complete
 
     
     
