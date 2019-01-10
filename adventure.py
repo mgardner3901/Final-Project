@@ -1,9 +1,13 @@
 """
 Author: Morgan Gardner
-Credit:  codereview.stackexchange.com
+Credit: codereview.stackexchange.com
 """    
 
+def game():
+
 import random
+
+
 print('                                         -----Adventure-----   ')
 
 
@@ -106,7 +110,7 @@ while alive:
     
     complete = game()
     if complete == 1:
-        alive = input('You managed to escape the cavern alive! Would you like to play again? [y/n]: ')
+        alive = input('You managed to escape the prison unharmed! But who brought you there? And why? Would you like to play again? [y/n]: ')
     if alive in ['y', 'Y', 'YES', 'yes', 'Yes',]:
         alive
 
