@@ -48,17 +48,17 @@ if case3 in ['y', 'Y', 'Yes', 'YES', 'yes']:
             print ("    YOU MUST HIT ABOVE A 5 TO KILL THE GOBLIN   ")
             print ("IF THE GOBLIN HITS HIGHER THAN YOU, YOU WILL DIE")
             print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- ")
-            fdmg1 = int(random.randint(3, 9))
-            edmg1 = int(random.randint(1, 5))
+            pdmg1 = int(random.randint(3, 9))
+            gdmg1 = int(random.randint(1, 5))
             print ("you hit a", fdmg1)
             print ("the goblin hits a", edmg1)
 
-            if edmg1 > fdmg1:
+            if gdmg1 > pdmg1:
                 print ("The goblin has dealt more damage than you, but you manage to escape safely!")
                 complete = 0
                 return complete
 
-            elif fdmg1 < 5:
+            elif pdmg1 < 5:
                 print ("You didn't do enough damage to kill the goblin, but you manage to fend it off and escape")
                 complete = 1
                 return complete
@@ -76,17 +76,17 @@ if case3 in ['y', 'Y', 'Yes', 'YES', 'yes']:
             print ("    YOU MUST HIT ABOVE A 5 TO KILL THE GOBLIN   ")
             print ("IF THE GOBLIN HITS HIGHER THAN YOU, YOU WILL DIE")
             print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- ")
-            fdmg1 = int(random.randint(1, 7))
-            edmg1 = int(random.randint(1, 5))
+            pdmg1 = int(random.randint(1, 7))
+            gdmg1 = int(random.randint(1, 5))
             print ("you hit a", fdmg1)
             print ("the goblin hits a", edmg1)
 
-            if edmg1 > fdmg1:
+            if gdmg1 > pdmg1:
                 print ("The goblin has dealt more damage than you!")
                 complete = 0
                 return complete
 
-            elif fdmg1 < 5:
+            elif pdmg1 < 5:
                 print ("You didn't do enough damage to kill the goblin, but you manage to get away")
                 complete = 1
                 return complete
