@@ -50,8 +50,8 @@ if case3 in ['y', 'Y', 'Yes', 'YES', 'yes']:
             print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- ")
             pdmg1 = int(random.randint(3, 9))
             gdmg1 = int(random.randint(1, 5))
-            print ("you hit a", fdmg1)
-            print ("the goblin hits a", edmg1)
+            print ("you hit a", pdmg1)
+            print ("the goblin hits a", gdmg1)
 
             if gdmg1 > pdmg1:
                 print ("The goblin has dealt more damage than you, but you manage to escape safely!")
@@ -78,11 +78,11 @@ if case3 in ['y', 'Y', 'Yes', 'YES', 'yes']:
             print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- ")
             pdmg1 = int(random.randint(1, 7))
             gdmg1 = int(random.randint(1, 5))
-            print ("you hit a", fdmg1)
-            print ("the goblin hits a", edmg1)
+            print ("you hit a", pdmg1)
+            print ("the goblin hits a", edmgg)
 
             if gdmg1 > pdmg1:
-                print ("The goblin has dealt more damage than you!")
+                print ("Uh-oh! The goblin has dealt more damage than you!")
                 complete = 0
                 return complete
 
