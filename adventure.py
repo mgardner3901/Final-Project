@@ -12,11 +12,11 @@ print ("You wake up in a dark room lit only by a single cande. Your eyes adjust 
 case1 = str(input("Do you take it? [Yes or No]: "))
 
 if case1 in ['y', 'Y', 'Yes', 'YES', 'yes']:
-    print("You have taken the candle")
+    print("-+-You have taken the candle-+-")
     candle = 1
 
 else:
-    print("You leave the candle behind")
+    print("-+-You leave the candle behind-+-")
     candle = 0
     
 print ("As you proceed further into the cave, you see a small glowing object")
@@ -36,7 +36,7 @@ case3 = str(input("Do you try to fight it? [Yes or No]"))
  
 if case3 in ['y', 'Y', 'Yes', 'YES', 'yes']:
 
-        #with candle
+        #fight with the candle
         if candle == 1:
             print ("You only have a candle to fight with!")
             print ("You wave the flame at the goblin and it screeches and cowers")
@@ -65,7 +65,7 @@ if case3 in ['y', 'Y', 'Yes', 'YES', 'yes']:
                 complete = 1
                 return complete    
                 
-        #without candle
+        #fight without the candle
         else:
             print ("You don't have anything to fight with!")
             print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-")
@@ -92,13 +92,16 @@ if case3 in ['y', 'Y', 'Yes', 'YES', 'yes']:
                 print ("You killed the goblin!")
                 complete = 1
                 return complete
-#dont approach                
+                
+#dont approach the object               
 if case3 in ['n', 'N', 'No', 'NO', 'no']:
     print ("You run and attempt to leave the cave...")
     print ("But something won't let you....")
     complete = 0
     return complete
     
+    
+
     
 
                 
