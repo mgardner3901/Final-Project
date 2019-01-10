@@ -3,8 +3,6 @@ Author: Morgan Gardner
 Credit: codereview.stackexchange.com
 """    
 
-def game():
-
 import random
 
 
