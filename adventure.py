@@ -40,11 +40,11 @@ if case3 in ['y', 'Y', 'Yes', 'YES', 'yes']:
         if candle == 1:
             print ("You only have a candle to fight with!")
             print ("You wave the flame at the goblin and it screeches and cowers")
-            print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-")
-            print ("                      COMBAT                     ")
-            print ("    YOU MUST HIT ABOVE A 5 TO KILL THE GOBLIN    ")
-            print (" IF THE GOBLIN HITS HIGHER THAN YOU, YOU WILL DIE")
-            print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-")
+            print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- ")
+            print ("                      COMBAT                    ")
+            print ("    YOU MUST HIT ABOVE A 5 TO KILL THE GOBLIN   ")
+            print ("IF THE GOBLIN HITS HIGHER THAN YOU, YOU WILL DIE")
+            print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- ")
             fdmg1 = int(random.randint(3, 9))
             edmg1 = int(random.randint(1, 5))
             print ("you hit a", fdmg1)
@@ -68,11 +68,11 @@ if case3 in ['y', 'Y', 'Yes', 'YES', 'yes']:
         #fight without the candle
         else:
             print ("You don't have anything to fight with!")
-            print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-")
-            print ("                    Fighting...                  ")
-            print ("    YOU MUST HIT ABOVE A 5 TO KILL THE GOBLIN    ")
-            print (" IF THE GOBLIN HITS HIGHER THAN YOU, YOU WILL DIE")
-            print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-")
+            print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- ")
+            print ("                    Fighting...                 ")
+            print ("    YOU MUST HIT ABOVE A 5 TO KILL THE GOBLIN   ")
+            print ("IF THE GOBLIN HITS HIGHER THAN YOU, YOU WILL DIE")
+            print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- ")
             fdmg1 = int(random.randint(1, 7))
             edmg1 = int(random.randint(1, 5))
             print ("you hit a", fdmg1)
@@ -100,8 +100,28 @@ if case3 in ['n', 'N', 'No', 'NO', 'no']:
     complete = 0
     return complete
     
+
+# game complete and loop
+
+alive = True
+while alive:
+    
+    complete = game()
+    if complete == 1:
+        alive = input('You managed to escape the cavern alive! Would you like to play again? [y/n]: ')
+    if alive in ['y', 'Y', 'YES', 'yes', 'Yes',]:
+        alive
+
+
+    
     
 
+    
+#Notes --The return statement allows you to terminate the execution of a 
+#        function before you reach the end.The flow of execution 
+#        immediately returns to the caller.
+#
+#
     
 
                 
