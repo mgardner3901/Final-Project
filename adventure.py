@@ -2,11 +2,10 @@
 Author: Morgan Gardner
 Credit:  codereview.stackexchange.com
 """    
-    
-
-print('                                         -----Adventure-----   ')
 
 import random
+print('                                         -----Adventure-----   ')
+
 
 print ("You wake up in a dark room lit only by a single cande. Your eyes adjust and you look around. You seem to be in a cell made from stone and you notice that the door to the cell has been left open. You decide to get up and explore. Do you take the candle with you? ")
 case1 = str(input("Do you take it? [Yes or No]: "))
@@ -51,7 +50,7 @@ if case3 in ['y', 'Y', 'Yes', 'YES', 'yes']:
             print ("the goblin hits a", edmg1)
 
             if edmg1 > fdmg1:
-                print ("The goblin has dealt more damage than you!")
+                print ("The goblin has dealt more damage than you, but you manage to escape safely!")
                 complete = 0
                 return complete
 
@@ -69,7 +68,7 @@ if case3 in ['y', 'Y', 'Yes', 'YES', 'yes']:
         else:
             print ("You don't have anything to fight with!")
             print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- ")
-            print ("                    Fighting...                 ")
+            print ("                    COMBAT                      ")
             print ("    YOU MUST HIT ABOVE A 5 TO KILL THE GOBLIN   ")
             print ("IF THE GOBLIN HITS HIGHER THAN YOU, YOU WILL DIE")
             print ("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- ")
@@ -102,7 +101,6 @@ if case3 in ['n', 'N', 'No', 'NO', 'no']:
     
 
 # game complete and loop
-
 alive = True
 while alive:
     
@@ -111,7 +109,6 @@ while alive:
         alive = input('You managed to escape the cavern alive! Would you like to play again? [y/n]: ')
     if alive in ['y', 'Y', 'YES', 'yes', 'Yes',]:
         alive
-
 
     
     
